@@ -9,6 +9,8 @@
 
 ##  How Does Cache Work ?
 
+![Alt type](https://media.geeksforgeeks.org/wp-content/uploads/20240110183740/Cache-Working.jpg)
+
    * web application stores data in a database. When a client requests some data, it is fetched from the database and then it is returned to the user. 
    * Reading data from the database needs network calls and I/O operation which is a time-consuming process. 
    * Cache reduces the network call to the database and speeds up the performance of the system. 
@@ -49,6 +51,13 @@ Caching can be used in a variety of different systems, including web application
 ###  => Cache consistency:
    * Caching can introduce issues with data consistency, particularly in systems where multiple users or applications are accessing the same data.
    * To prevent this, systems may use cache invalidation techniques or implement a cache consistency protocol to ensure that data remains consistent across all users and applications.
+
+## Application Server Cache :
+![Alt](https://media.geeksforgeeks.org/wp-content/uploads/20240212140144/Application-Server-Cache-(1).webp)
+   * A cache can be added in in-memory alongside the application server.
+   * The user’s request will be stored in this cache and whenever the same request comes again, it will be returned from the cache.
+   * For a new request, data will be fetched from the disk and then it will be returned.
+   * Once the new request will be returned from the disk, it will be stored in the same cache for the next time request from the user. 
 
 ## What are the Advantages of using Caching ?
 
